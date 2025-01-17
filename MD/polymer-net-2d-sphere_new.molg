@@ -1,0 +1,134 @@
+#!/usr/bin/python
+from poetry import molgen
+import math
+
+mol0=molgen.Molecule(4)
+mol0.setParticleTypes("A0,B0,B0,B0")
+mol0.setTopology("0-1,0-2,0-3")
+mol0.setBondLength("A0","B0", 1.0)
+mol0.setAngleDegree("B0", "A0", "B0", 120)
+mol0.setInit("B0", 1)
+mol0.setCris("A0", 1)
+mol0.setSphere(0.0, 0.0, 0.0, 0.0, 8.0)
+
+
+mol1=molgen.Molecule(4)
+mol1.setParticleTypes("A1,B1,B1,B1")
+mol1.setTopology("0-1,0-2,0-3")
+mol1.setBondLength("A1","B1", 1.0)
+mol1.setAngleDegree("B1", "A1", "B1", 120)
+mol1.setInit("B1", 1)
+mol1.setCris("A1", 1)
+mol1.setSphere(0.0, 0.0, 0.0, 9.0, 11.0)
+
+
+mol2=molgen.Molecule(4)
+mol2.setParticleTypes("A2,B2,B2,B2")
+mol2.setTopology("0-1,0-2,0-3")
+mol2.setBondLength("A2","B2", 1.0)
+mol2.setAngleDegree("B2", "A2", "B2", 120)
+mol2.setInit("B2", 1)
+mol2.setCris("A2", 1)
+mol2.setSphere(0.0, 0.0, 0.0, 12.0, 14.0)
+
+mol3=molgen.Molecule(4)
+mol3.setParticleTypes("A3,B3,B3,B3")
+mol3.setTopology("0-1,0-2,0-3")
+mol3.setBondLength("A3","B3", 1.0)
+mol3.setAngleDegree("B3", "A3", "B3", 120)
+mol3.setInit("B3", 1)
+mol3.setCris("A3", 1)
+mol3.setSphere(0.0, 0.0, 0.0, 15.0, 17.0)
+
+mol4=molgen.Molecule(4)
+mol4.setParticleTypes("A4,B4,B4,B4")
+mol4.setTopology("0-1,0-2,0-3")
+mol4.setBondLength("A4","B4", 1.0)
+mol4.setAngleDegree("B4", "A4", "B4", 120)
+mol4.setInit("B4", 1)
+mol4.setCris("A4", 1)
+mol4.setSphere(0.0, 0.0, 0.0, 18.0, 20.0)
+
+mol5=molgen.Molecule(4)
+mol5.setParticleTypes("A5,B5,B5,B5")
+mol5.setTopology("0-1,0-2,0-3")
+mol5.setBondLength("A5","B5", 1.0)
+mol5.setAngleDegree("B5", "A5", "B5", 120)
+mol5.setInit("B5", 1)
+mol5.setCris("A5", 1)
+mol5.setSphere(0.0, 0.0, 0.0, 21.0, 23.0)
+
+
+mol6=molgen.Molecule(4)
+mol6.setParticleTypes("A6,B6,B6,B6")
+mol6.setTopology("0-1,0-2,0-3")
+mol6.setBondLength("A6","B6", 1.0)
+mol6.setAngleDegree("B6", "A6", "B6", 120)
+mol6.setInit("B6", 1)
+mol6.setCris("A6", 1)
+mol6.setSphere(0.0, 0.0, 0.0, 24.0, 26.0)
+
+
+mol7=molgen.Molecule(4)
+mol7.setParticleTypes("A7,B7,B7,B7")
+mol7.setTopology("0-1,0-2,0-3")
+mol7.setBondLength("A7","B7", 1.0)
+mol7.setAngleDegree("B7", "A7", "B7", 120)
+mol7.setInit("B7", 1)
+mol7.setCris("A7", 1)
+mol7.setSphere(0.0, 0.0, 0.0, 27.0, 29.0)
+
+
+mol8=molgen.Molecule(4)
+mol8.setParticleTypes("A8,B8,B8,B8")
+mol8.setTopology("0-1,0-2,0-3")
+mol8.setBondLength("A8","B8", 1.0)
+mol8.setAngleDegree("B8", "A8", "B8", 120)
+mol8.setInit("B8", 1)
+mol8.setCris("A8", 1)
+mol8.setSphere(0.0, 0.0, 0.0, 30.0, 32.0)
+
+mol9=molgen.Molecule(4)
+mol9.setParticleTypes("A9,B9,B9,B9")
+mol9.setTopology("0-1,0-2,0-3")
+mol9.setBondLength("A9","B9", 1.0)
+mol9.setAngleDegree("B9", "A9", "B9", 120)
+mol9.setInit("B9", 1)
+mol9.setCris("A9", 1)
+mol9.setSphere(0.0, 0.0, 0.0, 33.0, 35.0)
+
+mol10=molgen.Molecule(4)
+mol10.setParticleTypes("A10,B10,B10,B10")
+mol10.setTopology("0-1,0-2,0-3")
+mol10.setBondLength("A10","B10", 1.0)
+mol10.setAngleDegree("B10", "A10", "B10", 120)
+mol10.setInit("B10", 1)
+mol10.setCris("A10", 1)
+mol10.setSphere(0.0, 0.0, 0.0, 36.0, 38.0)
+
+mol11=molgen.Molecule(4)
+mol11.setParticleTypes("A11,B11,B11,B11")
+mol11.setTopology("0-1,0-2,0-3")
+mol11.setBondLength("A11","B11", 1.0)
+mol11.setAngleDegree("B11", "A11", "B11", 120)
+mol11.setInit("B11", 1)
+mol11.setCris("A11", 1)
+mol11.setSphere(0.0, 0.0, 0.0, 39.0, 41.0)
+
+gen0=molgen.Generators(200, 200, 200)
+gen0.addMolecule(mol0,  4*int(math.pi*(8.0*8.0+7.0*7.0+6.0*6.0 + 5.0*5.0)*0.085))  #5.0
+gen0.addMolecule(mol1,  4*int(math.pi*9.0*9.0*0.085))  #6.0
+gen0.addMolecule(mol2,  4*int(math.pi*10.0*10.0*0.085))  #7.0
+gen0.addMolecule(mol3,  4*int(math.pi*11.0*11.0*0.085))  #8.0
+gen0.addMolecule(mol4,  4*int(math.pi*12.0*12.0*0.085))  #9.0
+gen0.addMolecule(mol5,  4*int(math.pi*13.0*13.0*0.085))  #10.0
+gen0.addMolecule(mol6,  4*int(math.pi*14.0*14.0*0.085))  #11.0
+gen0.addMolecule(mol7,  4*int(math.pi*15.0*15.0*0.085))  #12.0
+gen0.addMolecule(mol8,  4*int(math.pi*16.0*16.0*0.085))  #13.0
+gen0.addMolecule(mol9,  4*int(math.pi*17.0*17.0*0.085))  #14.0
+gen0.addMolecule(mol10, 4*int(math.pi*18.0*18.0*0.085))  #15.0
+gen0.addMolecule(mol11, 4*int(math.pi*19.0*19.0*0.085))  #16.0
+gen0.setDimension(3)
+gen0.setMinimumDistance(0.9)
+gen0.outPutXML("pn2d")
+
